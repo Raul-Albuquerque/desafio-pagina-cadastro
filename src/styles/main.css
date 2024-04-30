@@ -1,0 +1,137 @@
+:root {
+  --color-dark10: #1A202C;
+  --color-dark20: #656769;
+  --color-dark30: #E8E8E8;
+  --color-dark40: #F7FAFC;
+  --color-white: #fff;
+  --color-green: #1E9E6A;
+  --border-radius: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 80px 0;
+}
+
+.section-image > img {
+  max-width: 460px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .section-image {
+    display: none;
+  }
+}
+
+.section-form {
+  max-width: 460px;
+  width: 100%;
+  color: var(--color-dark10);
+}
+
+.section-form > h2,
+.section-form > h3 {
+  font-size: 32px;
+}
+.section-form > h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.section-form > h3 {
+  font-weight: 600;
+}
+
+form {
+  margin-top: 14px;
+}
+
+.input-group {
+  margin-top: 16px;
+}
+
+
+.label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.input {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid var(--color-dark30);
+  border-radius: var(--border-radius);
+  background-color: var(--color-dark40);
+}
+
+.check-group {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checklabel {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.checklabel > span {
+  color: var(--color-green);
+}
+
+.checklabel > span:hover {
+  opacity: 0.7;
+}
+
+.checklabel:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-dark30);
+  border-radius: 50%;
+}
+
+.checkbox:checked + .checklabel:before {
+  background-color: var(--color-primary);
+}
+
+button {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 18px;
+  border-radius: var(--border-radius);
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-green);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
