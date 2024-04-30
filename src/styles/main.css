@@ -25,6 +25,12 @@
   padding: 80px 0;
 }
 
+@media (max-width: 480px) {
+  .main-content {
+    padding: 60px 40px;
+  }
+}
+
 .section-image > img {
   max-width: 460px;
   width: 100%;
